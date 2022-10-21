@@ -1,6 +1,6 @@
 .submenu {
   padding: 0;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
@@ -13,7 +13,7 @@
 }
 
 .submenu-open {
-  height: 150px;
+  max-height: 200px;
 }
 
 li {
