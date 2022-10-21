@@ -1,17 +1,18 @@
-:root 
-{
-//Any global you wish to share with components 
---default-layout-background-color: #edf1f7;
---default-text-color: #222b45;
---default-banner-background-color: #e6f1f4;
---default-card-background-color: #fff;
---default-button-background-color: #f7f9fc;
+:root {
+  //Any global you wish to share with components
+  --layout-background-color: #edf1f7;
+  --text-color: #222b45;
+  --banner-background-color: #e6f1f4;
+  --card-background-color: #fff;
+  --button-background-color: #f7f9fc;
 
---dark-layout-background-color: #49667a;
---dark-text-color: #fff;
---dark-banner-background-color: #2a3b47;
---dark-card-background-color: #384f5f;
---dark-button-background-color: #4e6275;
+  --box-shadow: 3px 6px 14px 0 rgb(0 0 0 / 10%);
+}
 
---box-shadow: 3px 6px 14px 0 rgb(0 0 0 / 10%);
+:root .dark {
+  --layout-background-color: #49667a;
+  --text-color: #fff;
+  --banner-background-color: #2a3b47;
+  --background-color: #384f5f;
+  --button-background-color: #4e6275;
 }

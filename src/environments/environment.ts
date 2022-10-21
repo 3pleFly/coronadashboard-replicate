@@ -3,7 +3,21 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  sidemenuItems: [
+    {
+      title: 'עולמות תוכן',
+      items: ['קורונה', 'עולמות תוכן נוספים בקרוב...'],
+    },
+    {
+      title: 'עולם הדאטה',
+      items: ['הי-DATA', 'GIS', 'Data_Gov'],
+    },
+    {
+      title: 'על הדשבורד',
+      items: ['אודות', 'תנאי שימוש', 'מדריך למשתמש'],
+    },
+  ],
 };
 
 /*

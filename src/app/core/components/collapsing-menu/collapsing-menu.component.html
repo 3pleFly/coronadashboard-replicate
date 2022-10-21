@@ -1,0 +1,9 @@
+<li>
+  <button (click)="toggleSubmenu(icon)">
+    {{ this.menuTitle }}
+    <fa-icon #icon [icon]="faAngleLeft"></fa-icon>
+  </button>
+  <ul class="submenu" [ngClass]="{'submenu-open': sidemenuToggle}">
+    <li *ngFor="let menuItem of this.menuItems">{{ menuItem }}</li>
+  </ul>
+</li>

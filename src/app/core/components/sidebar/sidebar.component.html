@@ -1,0 +1,10 @@
+<nav [ngClass]="{ 'sidemenu-open': sideMenuState }">
+  <ul class="sidemenu" >
+    <app-collapsing-menu
+      *ngFor="let menu of this.menudata"
+      [menuTitle]="menu.title"
+      [menuItems]="menu.items"
+    >
+    </app-collapsing-menu>
+  </ul>
+</nav>

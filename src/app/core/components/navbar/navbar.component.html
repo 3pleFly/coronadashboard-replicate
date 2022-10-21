@@ -1,0 +1,35 @@
+<header>
+  <div class="hamburger" #hamburger (click)="transformBurger(hamburger)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div class="navbar-content">
+    <img
+      src="https://datadashboard.health.gov.il/COVID-19/assets/images/logo_DAshboard-01.png"
+      alt="Irael Ministry of Health logo"
+    />
+    <div class="text-desc">
+      <h4>נגיף הקורונה בישראל - תמונת מצב כללית</h4>
+      <span>עדכון אחרון: 20 בקאוקטובר 2022 | 06:52</span>
+    </div>
+  </div>
+
+  <button class="theme-button" (click)="toggleTheme()">
+    <img
+      src="https://datadashboard.health.gov.il/COVID-19/assets/images/brightness_light.png"
+      alt="site theme switch"
+    />
+  </button>
+</header>
+<app-sidebar [sideMenuState]="this.sideMenuState"></app-sidebar>
+<nav [ngClass]="'dark'">
+  <ul>
+    <li>מבט על</li>
+    <li>מדדים מרכזיים</li>
+    <li>מדדי תחלואה כללית</li>
+    <li>תחלואה ואשפוזי ילדים</li>
+    <li>תחלואה מחו''ל</li>
+    <li>השפעות התחסנות על התחלואה</li>
+  </ul>
+</nav>

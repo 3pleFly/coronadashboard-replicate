@@ -1,0 +1,36 @@
+.submenu {
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.9rem;
+
+  li {
+    padding: 10px 10px;
+  }
+}
+
+.submenu-open {
+  height: 150px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+
+
