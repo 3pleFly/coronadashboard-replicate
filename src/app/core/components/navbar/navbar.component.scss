@@ -62,12 +62,20 @@ header > button {
   position: absolute;
   left: 0;
   border: none;
-  background-color: #d8d8d8;
   padding: 10px;
+  background-color: #39475d;
   padding-right: 15px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   margin: 0;
+}
+
+header > button > img {
+  height: 27px;
+}
+
+.active-theme-button {
+  background-color: #d8d8d8 !important;
 }
 
 .text-desc {

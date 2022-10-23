@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Output() toggleThemeEvent = new EventEmitter<true>();
+  themeButtonColorToggle: boolean = false;
   sideMenuState: boolean = false;
 
   constructor() {}
@@ -15,6 +16,8 @@ export class NavbarComponent implements OnInit {
 
   toggleTheme(): void {
     this.toggleThemeEvent.emit(true);
+    this.themeButtonColorToggle = !this.themeButtonColorToggle;
+
   }
 
   transformBurger(hamburger: HTMLElement) {

@@ -7,7 +7,7 @@
   <div class="navbar-content">
     <img
       src="https://datadashboard.health.gov.il/COVID-19/assets/images/logo_DAshboard-01.png"
-      alt="Irael Ministry of Health logo"
+      alt="Israel Ministry of Health logo"
     />
     <div class="text-desc">
       <h4>נגיף הקורונה בישראל - תמונת מצב כללית</h4>
@@ -15,8 +15,14 @@
     </div>
   </div>
 
-  <button class="theme-button" (click)="toggleTheme()">
+  <button class="theme-button" (click)="toggleTheme()" [ngClass]="{ 'active-theme-button': this.themeButtonColorToggle}">
     <img
+      *ngIf="!this.themeButtonColorToggle"
+      src="https://datadashboard.health.gov.il/COVID-19/assets/images/brightness_dark.png"
+      alt="site theme switch"
+    />
+    <img
+      *ngIf="this.themeButtonColorToggle"
       src="https://datadashboard.health.gov.il/COVID-19/assets/images/brightness_light.png"
       alt="site theme switch"
     />
