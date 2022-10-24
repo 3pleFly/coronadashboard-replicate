@@ -1,5 +1,10 @@
 :host {
   color: var(--text-color);
+  position: fixed;
+  z-index: 20;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: rgba(26,31,51,0.38) 0 10px 16px 0;
 }
 
 .hamburger {
@@ -100,13 +105,24 @@ nav > ul {
   background: rgb(55, 79, 96);
   padding: 11px 0px;
   display: flex;
+  justify-content: space-around;
+
   margin: 0;
-  overflow: hidden;
+  overflow: scroll;
+  scrollbar-width: none;
   li {
+    cursor: pointer;
     list-style: none;
     color: var(--text-color);
-    padding: 0 15px;
+    padding: 5px 15px;
+    white-space: nowrap;
   }
+}
+
+
+
+nav > ul::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -9,7 +9,17 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CollapsingMenuComponent } from './components/collapsing-menu/collapsing-menu.component';
 
 @NgModule({
-  declarations: [DashboardComponent, NavbarComponent, SidebarComponent, CollapsingMenuComponent],
-  imports: [CommonModule, CoreRoutingModule, SharedModule,FontAwesomeModule],
+  declarations: [
+    DashboardComponent,
+    NavbarComponent,
+    SidebarComponent,
+    CollapsingMenuComponent,
+  ],
+  imports: [
+    CommonModule,
+    CoreRoutingModule,
+    SharedModule,
+    FontAwesomeModule,
+  ],
 })
 export class CoreModule {}

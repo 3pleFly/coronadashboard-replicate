@@ -1,0 +1,66 @@
+.card {
+  background-color: var(--card-background-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  box-shadow: 0 3px 15px -2px rgb(0 2 2 / 40%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+
+.title > span > article {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+  background-color: var(--card-background-color);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 140px;
+  transition: all 0.2s ease-in-out;
+  left: -65px;
+  z-index: 2;
+  overflow: visible;
+}
+
+.title > span {
+  position: relative;
+}
+
+.title > span > * {
+  margin-right: 5px;
+}
+
+.title > span:hover article {
+  visibility: visible;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.title > h5 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.content > h5 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content > span {
+  font-size: .75rem;
+}

@@ -1,0 +1,15 @@
+<div class="table-container">
+  <div class="general_cards cards">
+    <app-card *ngFor="let card of this.cards" [cardData]="card" [cardHeight]="'184px'"></app-card>
+  </div>
+  <div class="last_seven_days">
+    <h5>סיכום 7 ימים אחרונים</h5>
+    <div class="sevenday_cards cards">
+      <app-card
+        *ngFor="let card of this.lastSevenDaysCards"
+        [cardData]="card"
+        [cardHeight]="'150px'"
+      ></app-card>
+    </div>
+  </div>
+</div>

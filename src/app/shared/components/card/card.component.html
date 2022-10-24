@@ -1,0 +1,25 @@
+<div
+  class="card"
+  [ngStyle]="{ width: this.carddWidth, height: this.cardHeight }"
+>
+  <div class="title">
+    <h5>{{ cardData?.title?.title }}</h5>
+    <span
+      ><fa-icon [icon]="this.faCircleInfo"></fa-icon>
+      <article>
+        {{ cardData?.tooltip }}
+      </article>
+    </span>
+  </div>
+  <div class="content">
+    <h5>{{ cardData?.title?.value }}</h5>
+    <span *ngFor="let stat of cardData?.stats">
+      <span class="bold">
+        {{ stat.value }}
+      </span>
+      <span>
+        {{ stat.title }}
+      </span>
+    </span>
+  </div>    
+</div>

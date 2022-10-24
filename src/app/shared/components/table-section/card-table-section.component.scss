@@ -1,0 +1,56 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+}
+.table-container > * {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.general_cards > app-card {
+  width: 16.6667%;
+  padding: 10px;
+}
+
+.sevenday_cards > app-card {
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 1.3rem;
+}
+
+.last_seven_days {
+  background-color: var(--card-background-color);
+  border-radius: 10px;
+  box-shadow: 3px 6px 14px 0 rgb(0 0 0 / 20%);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.last_seven_days > h5 {
+  font-size: 1rem;
+  padding: 14px 22px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 745px) {
+
+  .general_cards > app-card {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .sevenday_cards > app-card {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 1.3rem;
+  }
+  
+}

@@ -1,3 +1,35 @@
 main {
+    padding-top: 140px;
     color: var(--text-color);
+    background-color: var(--layout-background-color);
+    overflow: hidden;
+}
+
+main > * { 
+    padding: .25rem 2.25rem 2.25rem;
+}
+
+.overview > h3 {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+@media only screen and  (max-width: 1000px) {
+
+    main {
+        padding-top: 220px;
+    }
+}
+
+
+@media only screen and  (max-width: 745px) {
+
+    main {
+        padding-top: 270px;
+    }
+
+    main > * {
+        padding: 5px;
+    }
 }

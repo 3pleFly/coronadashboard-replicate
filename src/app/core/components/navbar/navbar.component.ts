@@ -24,4 +24,10 @@ export class NavbarComponent implements OnInit {
     hamburger.classList.toggle('active');
     this.sideMenuState = !this.sideMenuState;
   }
+
+
+  onScroll(element: HTMLElement, $event: any): void {    
+    // element.scrollLeft += $event.deltaY;
+
+ } 
 }

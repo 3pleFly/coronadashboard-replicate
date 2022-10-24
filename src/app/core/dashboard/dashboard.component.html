@@ -1,6 +1,27 @@
-<app-navbar
-  (toggleThemeEvent)="this.toggleTheme()"
->
-</app-navbar>
-<main [ngClass]="this.theme"></main>
-<h1>hello</h1>
+<app-navbar (toggleThemeEvent)="this.toggleTheme()"> </app-navbar>
+<main [ngClass]="this.theme">
+  <section class="overview">
+    <h3>מבט על</h3>
+    <div class="content">
+      <app-card-table-section></app-card-table-section>
+    </div>
+  </section>
+  <section class="overview">
+    <h3>מבט על</h3>
+    <div class="content">
+      <app-card-table-section></app-card-table-section>
+    </div>
+  </section>
+  <section class="overview">
+    <h3>מבט על</h3>
+    <div class="content">
+      <app-card-table-section></app-card-table-section>
+    </div>
+  </section>
+  <section class="overview">
+    <h3>מבט על</h3>
+    <div class="content">
+      <app-card-table-section></app-card-table-section>
+    </div>
+  </section>
+</main>

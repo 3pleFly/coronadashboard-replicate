@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataApiService } from 'src/app/shared/services/data-api.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,13 @@ export class DashboardComponent implements OnInit {
   sideMenuState: boolean = false;
 
   theme: string = '';
-  constructor() {}
+  constructor(private dataApiService: DataApiService) {
+    this.dataApiService.getHopitalizedByLastMonth().subscribe((res) => {
+      console.log(res);
+      
+      
+    })
+  }
 
   ngOnInit(): void {}
 

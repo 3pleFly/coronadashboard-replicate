@@ -29,8 +29,8 @@
   </button>
 </header>
 <app-sidebar [sideMenuState]="this.sideMenuState"></app-sidebar>
-<nav [ngClass]="'dark'">
-  <ul>
+<nav [ngClass]="'dark'" (wheel)="onScroll(secondnavbar, $event)">
+  <ul #secondnavbar>
     <li>מבט על</li>
     <li>מדדים מרכזיים</li>
     <li>מדדי תחלואה כללית</li>
