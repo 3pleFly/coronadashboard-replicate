@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeOption } from 'ngx-echarts';
 import { DataApiService } from 'src/app/shared/services/data-api.service';
-
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -8,10 +8,10 @@ import { DataApiService } from 'src/app/shared/services/data-api.service';
 })
 export class DashboardComponent implements OnInit {
   sideMenuState: boolean = false;
+  theme!: string | ThemeOption;
 
-  theme: string = '';
   constructor(private dataApiService: DataApiService) {
-    this.dataApiService.getHopitalizedByLastMonth().subscribe((res) => {
+    this.dataApiService.getHopitalizedByLatest().subscribe((res) => {
       console.log(res);
       
       

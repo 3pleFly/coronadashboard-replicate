@@ -6,22 +6,11 @@
       <app-card-table-section></app-card-table-section>
     </div>
   </section>
-  <section class="overview">
-    <h3>מבט על</h3>
-    <div class="content">
-      <app-card-table-section></app-card-table-section>
-    </div>
-  </section>
-  <section class="overview">
-    <h3>מבט על</h3>
-    <div class="content">
-      <app-card-table-section></app-card-table-section>
-    </div>
-  </section>
-  <section class="overview">
-    <h3>מבט על</h3>
-    <div class="content">
-      <app-card-table-section></app-card-table-section>
-    </div>
+  <section class="charts">
+    <app-hospitalized-chart
+      width="200px"
+      [height]="'200px'"
+    ></app-hospitalized-chart>
+    <app-isolation-chart width="200px" [height]="'200px'"></app-isolation-chart>
   </section>
 </main>
