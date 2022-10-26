@@ -1,9 +1,5 @@
-<div class="chart-container">
-  <div
-    echarts
-    [theme]="theme"
-    [initOpts]="{ width: this.width, height: this.height }"
-    [options]="this.options"
-    class="demo-chart"
-  ></div>
-</div>
+<highcharts-chart 
+  [Highcharts]="Highcharts"
+  [options]="chartOptions"
+  style="width: 100%; height: 400px; display: block;"
+></highcharts-chart>

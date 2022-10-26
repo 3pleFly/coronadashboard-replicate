@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use './styles/variables' ;
+@import './styles/chartStyles.scss';
 @import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
  * {
@@ -20,3 +21,7 @@
   width: unset;
   height: unset !important;
 }
+
+// * {
+//   background: #000;
+// }
