@@ -9,13 +9,7 @@ export class DashboardComponent implements OnInit {
   sideMenuState: boolean = false;
   theme!: string;
 
-  constructor(private dataApiService: DataApiService) {
-    this.dataApiService.getHopitalizedByLatest().subscribe((res) => {
-      console.log(res);
-      
-      
-    })
-  }
+  constructor(private dataApiService: DataApiService) {}
 
   ngOnInit(): void {}
 
@@ -27,9 +21,5 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-  toggleSideMenu() {
-    
-  }
-
-
+  toggleSideMenu() {}
 }

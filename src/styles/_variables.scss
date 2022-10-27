@@ -6,7 +6,8 @@
   --card-background-color: #fff;
   --button-background-color: #f7f9fc;
   --text-color: #222b45;
-
+  --chart-width-size: 30%;
+  --chart-width-half-size: 45%;
   --box-shadow: 3px 6px 14px 0 rgb(0 0 0 / 10%);
 }
 
@@ -17,5 +18,11 @@
   --background-color: #384f5f;
   --button-background-color: #4e6275;
   --card-background-color: #384f5f;
+}
 
+@media only screen and (max-width: 745px) {
+  :root {
+    --chart-width-size: 90%;
+    --chart-width-half-size: 90%;
+  }
 }

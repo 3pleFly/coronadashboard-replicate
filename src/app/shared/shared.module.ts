@@ -8,6 +8,9 @@ import { CardTableSectionComponent } from './components/table-section/card-table
 import { HospitalizedChartComponent } from './components/charts/hospitalized-chart/hospitalized-chart.component';
 import { IsolationChartComponent } from './components/charts/isolation-chart/isolation-chart.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { TestResultsChartComponent } from './components/charts/test-results-chart/test-results-chart.component';
+import { MaleToFemaleSegmentationChartComponent } from './components/charts/male-to-female-segmentation-chart/male-to-female-segmentation-chart.component';
+import { RFactorChartComponent } from './components/charts/r-factor-chart/r-factor-chart.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
     CardTableSectionComponent,
     HospitalizedChartComponent,
     IsolationChartComponent,
+    TestResultsChartComponent,
+    MaleToFemaleSegmentationChartComponent,
+    RFactorChartComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +33,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
     CardTableSectionComponent,
     HospitalizedChartComponent,
     IsolationChartComponent,
+    TestResultsChartComponent,
+    MaleToFemaleSegmentationChartComponent,
+    RFactorChartComponent,
   ],
 })
 export class SharedModule {}

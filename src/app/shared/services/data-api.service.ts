@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import {
   DataResponeModel,
   HospitalizedGraphModel,
   IsolationGraphModel,
+  TestsGraphModel,
 } from '../components/models/data-response.model';
 import { map } from 'rxjs/internal/operators/map';
 import { Observable } from 'rxjs';
@@ -14,6 +15,11 @@ const hospitalizedGraphSubUrl =
 
 const isolationGraphSubUrl =
   '9eedd26c-019b-433a-b28b-efcc98de378d&include_total=true&limit=100&offset=0';
+
+  const testsGraphSubUrl =
+  'dcf999c1-d394-4b57-a5e0-9d014a62e046&include_total=true&limit=1000&offset=0';
+
+  
 
 @Injectable({
   providedIn: 'root',
@@ -48,4 +54,20 @@ export class DataApiService {
         })
       );
   }
+
+  getCoronaTestResults(): Observable<TestsGraphModel[]> {
+    return this.http
+      .get<DataResponeModel>(
+        `${environment.coronaApiUrl + testsGraphSubUrl}`
+      )
+      .pipe(
+        map((res) => {
+          return res.result.records.map((record) => {
+            return record;
+          });
+        })
+      );
+  }
+
+
 }

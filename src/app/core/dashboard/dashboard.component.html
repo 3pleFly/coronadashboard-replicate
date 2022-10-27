@@ -1,15 +1,20 @@
 <app-navbar (toggleThemeEvent)="this.toggleTheme()"> </app-navbar>
 <main [ngClass]="this.theme">
+  <h3>מבט על</h3>
   <section class="overview">
-    <h3>מבט על</h3>
     <div class="content">
       <app-card-table-section></app-card-table-section>
     </div>
   </section>
+  <h3>מדדים מרכזיים</h3>
   <section class="charts">
-    <app-hospitalized-chart
-
-    ></app-hospitalized-chart>
-    <app-isolation-chart ></app-isolation-chart>
+    <app-hospitalized-chart></app-hospitalized-chart>
+    <app-isolation-chart></app-isolation-chart>
+    <app-test-results-chart></app-test-results-chart>
+  </section>
+  <h3>מדדי תחלואה כללית</h3>
+  <section class="charts">
+    <app-male-to-female-segmentation-chart></app-male-to-female-segmentation-chart>
+    <app-r-factor-chart></app-r-factor-chart>
   </section>
 </main>

@@ -1,27 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-@use './styles/variables' ;
-@import './styles/chartStyles.scss';
+@use "./styles/variables";
+@import "./styles/chartStyles.scss";
 @import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
- * {
-    box-sizing: border-box;
- }
+* {
+  box-sizing: border-box;
+}
 
- body {
-    margin: 0;
-    font-family: 'Open Sans Hebrew', sans-serif;
-   direction: rtl;
- }
+body {
+  margin: 0;
+  font-family: "Open Sans Hebrew", sans-serif;
+  direction: rtl;
+}
 
- .bold {
-   font-weight: 800;
- }
+.bold {
+  font-weight: 800;
+}
 
- .demo-chart {
+.demo-chart {
   width: unset;
   height: unset !important;
 }
-
-// * {
-//   background: #000;
-// }

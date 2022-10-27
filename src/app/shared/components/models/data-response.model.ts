@@ -10,10 +10,20 @@ export interface HospitalizedGraphModel {
 export interface IsolationGraphModel {
     id: number;
     date: Date;
-    isolated_today_contact_with_confirmed: string;
-    isolated_today_abroad: string;
-    new_contact_with_confirmed: string;
-    new_from_abroad: string;
+    isolated_today_abroad: number;
+    new_from_abroad: number;
+}
+
+export interface RFactorGraphModel {
+    R: number;
+    day_date: 'string';
+}
+
+export interface TestsGraphModel {
+    _id: number;
+    result_date: string;
+    corona_result: string;
+    
 }
 
 export interface DataResponeModel {
