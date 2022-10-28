@@ -1,7 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import { Chart } from 'highcharts';
-import data from '../../../../../data.json';
+import data from '../../../../../assets/rFactorData.json';
 
 @Component({
   selector: 'app-r-factor-chart',

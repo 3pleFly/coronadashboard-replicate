@@ -1,0 +1,62 @@
+[
+  {
+    "city": "אחוזת ברק",
+    "vaccinated_first_dose": 96,
+    "vaccinated_second_dose": 88.03,
+    "vaccinated_third_dose": 69.1
+  },
+  {
+    "city": "נוף איילון",
+    "vaccinated_first_dose": 93,
+    "vaccinated_second_dose": 94.03,
+    "vaccinated_third_dose": 74.1
+  },
+  {
+    "city": "שמשית",
+    "vaccinated_first_dose": 94,
+    "vaccinated_second_dose": 96.03,
+    "vaccinated_third_dose": 77.21
+  },
+  {
+    "city": "קיסריה",
+    "vaccinated_first_dose": 96,
+    "vaccinated_second_dose": 87.49,
+    "vaccinated_third_dose": 72.23
+  },
+  {
+    "city": "סביון",
+    "vaccinated_first_dose": 96,
+    "vaccinated_second_dose": 93.03,
+    "vaccinated_third_dose": 83.93
+  },
+  {
+    "city": "רעננה",
+    "vaccinated_first_dose": 89.87,
+    "vaccinated_second_dose": 86.61,
+    "vaccinated_third_dose": 71.26
+  },
+  {
+    "city": "מתן",
+    "vaccinated_first_dose": 84.52,
+    "vaccinated_second_dose": 81.82,
+    "vaccinated_third_dose": 66.83
+  },
+  {
+    "city": "סביון",
+    "vaccinated_first_dose": 96,
+    "vaccinated_second_dose": 93.03,
+    "vaccinated_third_dose": 83.93
+  },
+  {
+    "city": "רעננה",
+    "vaccinated_first_dose": 89.87,
+    "vaccinated_second_dose": 86.61,
+    "vaccinated_third_dose": 71.26
+  },
+  {
+    "city": "מתן",
+    "vaccinated_first_dose": 84.52,
+    "vaccinated_second_dose": 81.82,
+    "vaccinated_third_dose": 66.83
+  }
+]

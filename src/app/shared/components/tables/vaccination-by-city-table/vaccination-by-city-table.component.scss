@@ -1,0 +1,53 @@
+table {
+  width: 100%;
+}
+mat-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  background-color: var(--card-background-color);
+  padding: 20px 0;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.container > h3 {
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.mat-elevation-z8 {
+  box-shadow: none;
+}
+.mat-table,
+.mat-paginator {
+  background-color: var(--card-background-color);
+  color: var(--text-color);
+}
+
+.mat-header-cell {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  background-color: var(--banner-background-color);
+}
+
+#city {
+  font-weight: 800;
+}
+
+.mat-select-trigger {
+  color: var(--text-color);
+}
+
+
+.mat-cell {
+  color: var(--text-color);
+}
+
+.mat-table {
+  border-radius: 10px;
+}
