@@ -19,6 +19,7 @@ export class DashboardComponent implements OnInit {
     } else {
       this.theme = 'dark';
     }
+// this.theme = event?'dark':''
   }
 
   toggleSideMenu() {}
