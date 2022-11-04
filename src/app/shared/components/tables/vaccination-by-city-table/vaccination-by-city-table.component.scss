@@ -1,18 +1,20 @@
 table {
   width: 100%;
 }
-mat-paginator {
-  display: flex;
-  justify-content: center;
-}
 
 .container {
+  height: 250px;
+  overflow: scroll;
   margin: 0 auto;
   width: 95%;
   background-color: var(--card-background-color);
   padding: 20px 0;
   border-radius: 10px;
   color: var(--text-color);
+}
+
+.container::-webkit-scrollbar { 
+  display: none;
 }
 
 .container > h3 {
@@ -33,6 +35,7 @@ mat-paginator {
   color: var(--text-color);
   font-size: 0.9rem;
   background-color: var(--banner-background-color);
+  font-weight: 800;
 }
 
 #city {
@@ -42,7 +45,6 @@ mat-paginator {
 .mat-select-trigger {
   color: var(--text-color);
 }
-
 
 .mat-cell {
   color: var(--text-color);

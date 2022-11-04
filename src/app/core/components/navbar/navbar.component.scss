@@ -15,6 +15,11 @@
   transform: translate(0, -4px) rotate(-45deg);
 }
 
+.highlight-navbar {
+  background: rgba(255,255,255,0.2);
+  border-radius: 30px;
+}
+
 .active .bar2 {
   opacity: 0;
 }
@@ -118,8 +123,6 @@ nav > ul {
     white-space: nowrap;
   }
 }
-
-
 
 nav > ul::-webkit-scrollbar {
   display: none;

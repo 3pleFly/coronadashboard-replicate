@@ -29,13 +29,13 @@
   </button>
 </header>
 <app-sidebar [sideMenuState]="this.sideMenuState"></app-sidebar>
-<nav [ngClass]="'dark'" (wheel)="onScroll(secondnavbar, $event)">
+<nav [ngClass]="'dark'">
   <ul #secondnavbar>
-    <li>מבט על</li>
-    <li>מדדים מרכזיים</li>
-    <li>מדדי תחלואה כללית</li>
-    <li>תחלואה ואשפוזי ילדים</li>
-    <li>תחלואה מחו''ל</li>
-    <li>השפעות התחסנות על התחלואה</li>
+    <li [ngClass]="{'highlight-navbar': this.currentActive === 1}" (click)="scrollNavigate(1)">מבט על</li>
+    <li [ngClass]="{'highlight-navbar': currentActive === 2}" (click)="scrollNavigate(2)">מדדים מרכזיים</li>
+    <li [ngClass]="{'highlight-navbar': currentActive === 3}" (click)="scrollNavigate(3)">מדדי תחלואה כללית</li>
+    <li [ngClass]="{'highlight-navbar': currentActive === 4}" (click)="scrollNavigate(4)">תחלואה ואשפוזי ילדים</li>
+    <li [ngClass]="{'highlight-navbar': currentActive === 5}" (click)="scrollNavigate(5)">תחלואה מחו''ל</li>
+    <li [ngClass]="{'highlight-navbar': currentActive === 6}" (click)="scrollNavigate(6)">השפעות התחסנות על התחלואה</li>
   </ul>
 </nav>

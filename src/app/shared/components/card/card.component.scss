@@ -6,14 +6,13 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-
 }
 
 .title {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
-
 
 .title > span > article {
   font-size: 0.8rem;
@@ -46,6 +45,7 @@
 }
 
 .title > h5 {
+  font-weight: 800;
   font-size: 0.9rem;
   margin: 0;
 }
@@ -53,6 +53,7 @@
 .content > h5 {
   font-size: 1.4rem;
   margin: 0;
+  font-weight: 800;
 }
 
 .content {
@@ -62,5 +63,5 @@
 }
 
 .content > span {
-  font-size: .75rem;
+  font-size: 0.95rem;
 }

@@ -19,16 +19,13 @@ const ELEMENT_DATA: VaccinationByCityModel[] = data.map(
   templateUrl: './vaccination-by-city-table.component.html',
   styleUrls: ['./vaccination-by-city-table.component.scss'],
 })
-export class VaccinationByCityTableComponent implements AfterViewInit {
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
+export class VaccinationByCityTableComponent  {
 
   displayedColumns: string[] = ['city', 'firstDose', 'secondDose', 'thirdDose'];
   dataSource = new MatTableDataSource<VaccinationByCityModel>(ELEMENT_DATA);
 
   constructor() {}
-  ngAfterViewInit(): void {
-    this.dataSource.paginator = this.paginator;
-  }
+
 
   ngOnInit(): void {}
 }
