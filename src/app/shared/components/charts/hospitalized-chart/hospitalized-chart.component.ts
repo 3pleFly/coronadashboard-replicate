@@ -2,32 +2,6 @@ import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { DataApiService } from 'src/app/shared/services/data-api.service';
 import * as Highcharts from 'highcharts';
 import { Chart } from 'highcharts';
-Highcharts.setOptions({
-  lang: {
-    shortMonths: [
-      'ינואר',
-      'פברואר',
-      'מרץ',
-      'אפריל',
-      'מאי',
-      'יוני',
-      'יולי',
-      'אוגוסט',
-      'ספטמבר',
-      'אוקטובר',
-      'נובמבר',
-      'דצמבר',
-    ],
-    weekdays: ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'],
-  },
-  tooltip: {
-    pointFormatter: function(){
-      let point = this;
-      let series = point.series;
-      return ` <b> ${series.name}: </b>  ${point.y}`
-    }
-  }
-});
 
 @Component({
   selector: 'app-hospitalized-chart',
@@ -65,6 +39,7 @@ export class HospitalizedChartComponent implements AfterViewInit {
           format: '{value:%e-%b}',
         },
       },
+
       plotOptions: {
         area: {
           stacking: 'normal',
@@ -102,8 +77,5 @@ export class HospitalizedChartComponent implements AfterViewInit {
         data: this.harshSick,
       });
     });
-
   }
-
-
 }

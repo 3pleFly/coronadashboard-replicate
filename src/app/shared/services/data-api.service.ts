@@ -9,6 +9,39 @@ import {
 } from '../components/models/data-response.model';
 import { map } from 'rxjs/internal/operators/map';
 import { Observable } from 'rxjs';
+import * as Highcharts from 'highcharts';
+Highcharts.setOptions({
+  lang: {
+    shortMonths: [
+      'ינואר',
+      'פברואר',
+      'מרץ',
+      'אפריל',
+      'מאי',
+      'יוני',
+      'יולי',
+      'אוגוסט',
+      'ספטמבר',
+      'אוקטובר',
+      'נובמבר',
+      'דצמבר',
+    ],
+    weekdays: ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'],
+  },
+  legend: {
+    align: 'center',
+    verticalAlign: 'top',
+    rtl: true,
+  },
+  tooltip: {
+    pointFormatter: function () {
+      let point = this;
+      let series = point.series;
+      return ` <b> ${series.name}: </b>  ${point.y}`;
+    },
+  },
+});
+
 
 const hospitalizedGraphSubUrl =
   'e4bf0ab8-ec88-4f9b-8669-f2cc78273edd&include_total=true&limit=100&offset=0';

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatTableModule } from '@angular/material/table';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { CardComponent } from './components/card/card.component';
@@ -11,6 +12,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { TestResultsChartComponent } from './components/charts/test-results-chart/test-results-chart.component';
 import { MaleToFemaleSegmentationChartComponent } from './components/charts/male-to-female-segmentation-chart/male-to-female-segmentation-chart.component';
 import { RFactorChartComponent } from './components/charts/r-factor-chart/r-factor-chart.component';
+import { VaccinationByCityTableComponent } from './components/tables/vaccination-by-city-table/vaccination-by-city-table.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { RFactorChartComponent } from './components/charts/r-factor-chart/r-fact
     TestResultsChartComponent,
     MaleToFemaleSegmentationChartComponent,
     RFactorChartComponent,
+    VaccinationByCityTableComponent,
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
     FontAwesomeModule,
     HighchartsChartModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   exports: [
     CardComponent,
@@ -36,6 +42,7 @@ import { RFactorChartComponent } from './components/charts/r-factor-chart/r-fact
     TestResultsChartComponent,
     MaleToFemaleSegmentationChartComponent,
     RFactorChartComponent,
+    VaccinationByCityTableComponent,
   ],
 })
 export class SharedModule {}

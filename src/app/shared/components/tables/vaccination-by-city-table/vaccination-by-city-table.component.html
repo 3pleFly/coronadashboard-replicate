@@ -1,0 +1,29 @@
+<div class="container">
+  <h3>התחסנות לפי יישובים</h3>
+  <div class="table">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="thirdDose">
+        <th mat-header-cell *matHeaderCellDef>מנה שלישית %</th>
+        <td mat-cell *matCellDef="let element">{{ element.thirdDose }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="secondDose">
+        <th mat-header-cell *matHeaderCellDef>מנה שניה %</th>
+        <td mat-cell *matCellDef="let element">{{ element.secondDose }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="firstDose">
+        <th mat-header-cell *matHeaderCellDef>מנה ראשונה %</th>
+        <td mat-cell *matCellDef="let element">{{ element.firstDose }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="city">
+        <th mat-header-cell *matHeaderCellDef id="city">ישוב</th>
+        <td mat-cell *matCellDef="let element" id="city">{{ element.city }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>
