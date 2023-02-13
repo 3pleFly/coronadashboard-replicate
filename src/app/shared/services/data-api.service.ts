@@ -52,10 +52,10 @@ const isolationGraphSubUrl =
   const testsGraphSubUrl =
   'dcf999c1-d394-4b57-a5e0-9d014a62e046&include_total=true&limit=1000&offset=0';
 
-  
+
 
 @Injectable({
-  providedIn: 'root',
+ providedIn: 'root'
 })
 export class DataApiService {
   constructor(private http: HttpClient) {}

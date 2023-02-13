@@ -21,5 +21,8 @@ import { CollapsingMenuComponent } from './components/collapsing-menu/collapsing
     SharedModule,
     FontAwesomeModule,
   ],
+  providers: [
+    { provide: 'MY_TOKEN', useValue: 'Hello this is value'}
+  ]
 })
 export class CoreModule {}

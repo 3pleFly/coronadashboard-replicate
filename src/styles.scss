@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @use "./styles/variables";
 @import "./styles/chartStyles.scss";
-@import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url("https://fonts.googleapis.com/earlyaccess/opensanshebrew.css");
+
 
 * {
   box-sizing: border-box;
@@ -9,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans Hebrew", sans-serif;
+  font-family: 'Open Sans Hebrew', sans-serif !important;
   direction: rtl;
 }
 
@@ -21,6 +22,3 @@ body {
   width: unset;
   height: unset !important;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

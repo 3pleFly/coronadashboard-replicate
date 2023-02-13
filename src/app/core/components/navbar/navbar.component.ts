@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   themeButtonColorToggle: boolean = false;
   sideMenuState: boolean = false;
   currentActive: number = 1;
+  title: string = 'hello;'
 
   // 0 - overview
   // 600 מדדים מרכזיים
