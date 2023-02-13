@@ -13,13 +13,13 @@ table {
   color: var(--text-color);
 }
 
-.container::-webkit-scrollbar { 
+.container::-webkit-scrollbar {
   display: none;
 }
 
 .container > h3 {
   padding-right: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .mat-elevation-z8 {
@@ -35,11 +35,11 @@ table {
   color: var(--text-color);
   font-size: 0.9rem;
   background-color: var(--banner-background-color);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #city {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .mat-select-trigger {
